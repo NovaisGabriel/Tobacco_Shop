@@ -1,0 +1,9 @@
+﻿@model CartViewModel
+
+<a asp-controller="Cart" class="nav-link text-light">
+    <span><img src="~/images/cart-5-16.ico" /></span>
+    <span style="color:white">
+        @Model.Cart.ShoppingCarts.Count
+    </span>
+</a>
+

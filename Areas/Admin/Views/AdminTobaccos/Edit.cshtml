@@ -1,0 +1,60 @@
+﻿@model Tobacco_Shop.Models.Tobacco
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<h3>Edit Tobacco</h3>
+<hr />
+<form asp-action="Edit" role="form">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input type="hidden" asp-for="TobaccoId" />
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ShortDescription" class="control-label"></label>
+        <textarea asp-for="ShortDescription" class="form-control"></textarea>
+        <span asp-validation-for="ShortDescription" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="LongDescription" class="control-label"></label>
+        <textarea asp-for="LongDescription" class="form-control"></textarea>
+        <span asp-validation-for="LongDescription" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Price" class="control-label"></label>
+        <input asp-for="Price" class="form-control" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ImageURL" class="control-label"></label>
+        <input asp-for="ImageURL" class="form-control" />
+        <span asp-validation-for="ImageURL" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ImageThumbnailUrl" class="control-label"></label>
+        <input asp-for="ImageThumbnailUrl" class="form-control" />
+        <span asp-validation-for="ImageThumbnailUrl" class="text-danger"></span>
+    </div>
+    <div class="row">
+        <div class="form-group col-sm-6">
+            <input class="form-check-input" asp-for="IsTobaccoBest" /> @Html.DisplayNameFor(model => model.IsTobaccoBest)
+        </div>
+        <div class="form-group col-sm-6">
+            <input class="form-check-input" asp-for="Available" /> @Html.DisplayNameFor(model => model.Available)
+        </div>
+    </div>
+    <div class="form-group">
+       <label asp-for="CategoryId" class="control-label"></label>
+       <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.CategoryId"></select>
+       <span asp-validation-for="CategoryId" class="text-danger"></span>
+    </div>
+    <hr />
+    <div class="form-group">
+        <input type="submit" value="Save" class="btn btn-primary" />
+        <a asp-action="Index" class="btn btn-outline-info">Return</a>
+    </div>
+</form>
+

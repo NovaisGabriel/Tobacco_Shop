@@ -1,0 +1,60 @@
+﻿@model CartViewModel
+
+<div class="row checkoutForm">
+    
+    <img src="~/images/Full-Cart-icon.png" />
+    <div>
+        <h4> Your Shopping Cart : </h4>
+    </div>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Quantity</th>
+                <th>Tobacco</th>
+                <th class="text-right">Price</th>
+                <th class="text-right">Sum</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Cart.ShoppingCarts)
+            {
+                <tr>
+                    <td class="text-center">@item.Quantity</td>
+                    <td class="text-left">@item.Tobacco.Name</td>
+                    <td class="text-right">@item.Tobacco.Price.ToString("c")</td>
+                    <td class="text-right">
+                        @((item.Quantity * item.Tobacco.Price).ToString("c"))
+                    </td>
+                    <td class="text-center">
+                        <a asp-controller="Cart" asp-action="RemoveItemCart" asp-route-tobaccoId="@item.Tobacco.TobaccoId"><img src="~/images/delete.png" /></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" class="text-right">Total:</td>
+                <td class="text-right">
+                    @Model.CartTotal.ToString("c")
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div class="text-right">
+        <div class="btn-group ">
+            <a class="btn btn-success" asp-controller="Order" asp-action="Checkout">Close</a>
+            <a class="btn-group">
+                <a class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    Add More<span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menuitem">
+                    <li><a asp-controller="Tobacco" asp-action="List" asp-route-category="National"><b>National</b></a></li>
+                    <li><a asp-controller="Tobacco" asp-action="List" asp-route-category="Imported"><b>Imported</b></a></li>
+                </ul>
+            </a>
+        </div>
+    </div>
+</div>
+

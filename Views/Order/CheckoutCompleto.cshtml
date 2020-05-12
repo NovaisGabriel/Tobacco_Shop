@@ -1,0 +1,33 @@
+﻿@model Order
+
+<div class="container marginTop1">
+
+    <div class="jumbotron">
+        <h2>@ViewBag.CheckoutCompleteMsg</h2>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <p>Client : <strong>@Model.Name</strong>
+            <p>Date of Order :  <strong>@Model.OrderSend</strong>
+            <p>Number of Order   : <strong>@Model.OrderId</strong></p>
+            <table class="table">
+              <tr>
+                <th></th>
+                <th>Quantity</th>
+                <th>Tobacco</th>
+                <th>Price</th>
+              </tr>
+              @foreach (var item in Model.OrderItens)
+               {
+                 <tr>
+                   <td><img src="@item.Tobacco.ImageURL" width="40" height="40" /></td>
+                   <td>@item.Quantity</td>
+                   <td>@item.Tobacco.Name</td>
+                   <td>@item.Tobacco.Price</td>
+                  </tr>
+               }
+            </table>
+            <h4>Total Cost of Order: <strong>@(((decimal)ViewBag.TotalOrder).ToString("C2"))</strong></h4>
+        </div>
+    </div>
+</div>

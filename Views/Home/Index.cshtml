@@ -1,0 +1,15 @@
+﻿@model HomeViewModel
+
+@await Html.PartialAsync("_Carousel")
+<br>
+<hr>
+<h2 style="text-align:center">Best Tobacco of 2020</h2>
+<h4 style="text-align:center">Get your Pipe and be ready to buy!</h4>
+<br>
+<hr>
+<div style="text-align:center" class="row">
+    @foreach(var tobacco in Model.BestTobacco)
+    {
+        @Html.Partial("_TobaccosAbstract", tobacco)
+    }
+</div>

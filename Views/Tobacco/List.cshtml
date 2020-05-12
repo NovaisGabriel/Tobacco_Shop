@@ -1,0 +1,16 @@
+@using Tobacco_Shop.Models
+@model TobaccoListViewModel
+
+<div><h2 style="text-align:center">@Model.CategoryNow</h2></div>
+<br>
+<hr>
+
+<div class="container">
+    <div class="row">
+        @foreach (var tobacco in Model.Tobaccos)
+        {
+           <partial name="_TobaccosAbstract" for=" @tobacco"/>
+        }
+    </div>
+</div>
+

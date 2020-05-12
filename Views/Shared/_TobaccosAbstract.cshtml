@@ -1,0 +1,22 @@
+@model Tobacco
+
+ <div class="col-sm-4 col-lg-4 col-md-4">
+    <div class="thumbnail">
+        <img src="@Model.ImageURL" style="width:50%;height:50%" class="img-rounded" alt=""/>
+    </div>
+    <br>
+    <div class="caption">
+        <h3 class="pull-rigth">@Model.Price.ToString("c")</h3>
+        <h3>
+            <a asp-controller="Tobacco" asp-action="Details" asp-route-tobaccoId="@Model.TobaccoId">@Model.Name</a>
+        </h3>
+        <p>@Model.ShortDescription</p>
+    </div>
+    <div text-right">
+        <p class="formPullRightButton">
+            <a class="btn btn-primary" asp-controller="Cart" asp-action="AddItemCart" asp-route-tobaccoId="@Model.TobaccoId">
+                Buy
+            </a>
+        </p>
+    </div>
+</div>
