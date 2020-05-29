@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3NO3ZC89SlWch835CPj62dBHaYJFq4MXntJpLl+qMSLgCS4XAIz9dd15AX6DZLXO0F5NTAwYuz7+Rh5PY/Vx8g==",
+  "dgSpecHash": "OEqyZkvuwLu8Y+sWZArcwAPuqkVYVGdVejev0hwh5F/njlBoiaYOwnB/URwutTEvNl3v20ubbLt3HZJgEwmjtg==",
   "success": true,
   "projectFilePath": "/home/novais/Desktop/Projetos/Tobacco_Shop/Tobacco_Shop.csproj",
   "expectedPackageFiles": [
@@ -172,7 +172,8 @@
     "/home/novais/.nuget/packages/system.xml.readerwriter/4.3.0/system.xml.readerwriter.4.3.0.nupkg.sha512",
     "/home/novais/.nuget/packages/system.xml.xdocument/4.3.0/system.xml.xdocument.4.3.0.nupkg.sha512",
     "/home/novais/.nuget/packages/system.xml.xmldocument/4.3.0/system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "/home/novais/.nuget/packages/system.xml.xmlserializer/4.3.0/system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "/home/novais/.nuget/packages/system.xml.xmlserializer/4.3.0/system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "/home/novais/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.2/microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
   ],
   "logs": []
 }
