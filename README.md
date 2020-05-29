@@ -20,11 +20,11 @@
 
 <h3> Algumas instruções primeiro...</h3>
 
-<p><b>Instalação do dotnet:</b><a href="https://docs.microsoft.com/pt-br/dotnet/core/install/linux-package-manager-ubuntu-2004">https://docs.microsoft.com/pt-br/dotnet/core/install/linux-package-manager-ubuntu-2004</a></p>
-<p><b>Instalação do CLI dotnet</b><a href="https://docs.microsoft.com/pt-br/ef/core/miscellaneous/cli/dotnet">https://docs.microsoft.com/pt-br/ef/core/miscellaneous/cli/dotnet</a></p>
-<p><b>Instalação do SQL Server</b><a href="https://docs.microsoft.com/pt-br/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-ver15">https://docs.microsoft.com/pt-br/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-ver15</a></p>
-<p><b>Criando as Migrações</b><a href="https://docs.microsoft.com/pt-br/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli">https://docs.microsoft.com/pt-br/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli</a></p>
-<p><b>Algumas Referências</b><a href="https://docs.microsoft.com/pt-br/ef/core/miscellaneous/cli/">https://docs.microsoft.com/pt-br/ef/core/miscellaneous/cli/</a></p>
+<p><b>Instalação do dotnet: </b><a href="https://docs.microsoft.com/pt-br/dotnet/core/install/linux-package-manager-ubuntu-2004">https://docs.microsoft.com/pt-br/dotnet/core/install/linux-package-manager-ubuntu-2004</a></p>
+<p><b>Instalação do CLI dotnet: </b><a href="https://docs.microsoft.com/pt-br/ef/core/miscellaneous/cli/dotnet">https://docs.microsoft.com/pt-br/ef/core/miscellaneous/cli/dotnet</a></p>
+<p><b>Instalação do SQL Server: </b><a href="https://docs.microsoft.com/pt-br/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-ver15">https://docs.microsoft.com/pt-br/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-ver15</a></p>
+<p><b>Criando as Migrações: </b><a href="https://docs.microsoft.com/pt-br/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli">https://docs.microsoft.com/pt-br/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli</a></p>
+<p><b>Algumas Referências: </b><a href="https://docs.microsoft.com/pt-br/ef/core/miscellaneous/cli/">https://docs.microsoft.com/pt-br/ef/core/miscellaneous/cli/</a></p>
 
 <h3>As imagens abaixo mostram o layout do projeto</h3>
 
